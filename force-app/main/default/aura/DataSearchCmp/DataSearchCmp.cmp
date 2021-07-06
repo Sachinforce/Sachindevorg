@@ -1,0 +1,41 @@
+<aura:component controller="DataSearchController">
+    <aura:attribute name="sObjectName" type="String" />
+    <aura:attribute name="sObjectValues" type="String[]"/>
+    <aura:attribute name="fieldValues" type="String[]"/>
+    <aura:attribute name="operatorValues" type="String[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+  <lightning:layoutItem flexibility="auto" padding="around-small">
+      <div class="custom-box">
+        <lightning:select name="objectSelection" label="Select Object">       
+            <aura:iteration items="{!v.sObjectValues}" var="item">
+                <option value="{!item}">
+                    {!item}
+                </option>
+            </aura:iteration>
+        </lightning:select>
+    </div>
+      </lightning:layoutItem> 
+    <lightning:layoutItem flexibility="auto" padding="around-small">
+    <div class="custom-box">
+        <lightning:select name="fieldSelection" label="Select Field">       
+            <aura:iteration items="{!v.fieldValues}" var="item">
+                <option value="{!item}">
+                    {!item}
+                </option>
+            </aura:iteration>
+        </lightning:select>
+    </div>
+      </lightning:layoutItem> 
+    <lightning:layoutItem flexibility="auto" padding="around-small">
+      <div class="custom-box">
+        <lightning:select name="operatorSelection" label="Select Operator">       
+            <aura:iteration items="{!v.operatorValues}" var="item">
+                <option value="{!item}">
+                    {!item}
+                </option>
+            </aura:iteration>
+        </lightning:select>
+    </div>
+      
+</lightning:layoutItem> 
+</aura:component>

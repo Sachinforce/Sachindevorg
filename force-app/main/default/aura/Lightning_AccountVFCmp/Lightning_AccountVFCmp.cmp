@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="recordId" type="String" access="global"/>
+    <aura:attribute name="recordSaveError" type="String" default=""/>
+   
+    <div class="Edit Contact">
+        
+        <lightning:card  title="Edit Contact">
+            <force:recordEdit aura:id="edit" recordId="{!v.recordId}"/>
+        </lightning:card>
+    </div>
+</aura:component>

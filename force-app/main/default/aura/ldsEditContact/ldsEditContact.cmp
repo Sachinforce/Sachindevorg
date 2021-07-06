@@ -1,0 +1,18 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForRecordHome">
+    <aura:attribute name="contactRecord" type="Object"/>
+    <aura:attribute name="recordId" type="String" access="global"/>
+    <aura:attribute name="recordSaveError" type="String" default=""/>
+   
+    <div class="Edit Contact">
+        
+        <lightning:card  title="Edit Contact">
+            <force:recordEdit aura:id="edit" recordId="{!v.recordId}"/>
+        </lightning:card>
+    </div>
+    
+    <!-- Display error message -->
+    <aura:if isTrue="{!not(empty(v.recordSaveError))}">
+        <div class="recordSaveError">
+            {!v.recordSaveError}</div>
+    </aura:if>
+</aura:component>

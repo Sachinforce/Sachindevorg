@@ -1,0 +1,15 @@
+<apex:page standardController="lead">
+ <apex:form >
+ .................  sachin.
+ </apex:form>
+ 
+ <script>
+   function comingnow()
+   {
+     alert('coming here 123: ' ) ;
+   }
+   
+   window.onload = comingnow;
+ </script>
+
+</apex:page>

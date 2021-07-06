@@ -1,0 +1,17 @@
+<apex:page standardController="Contact" lightningStylesheets="true">
+  <div id="renderLightingComponent"/>
+  <apex:includeLightning />
+  
+  <script>
+            $Lightning.use("c:Lightning_AccountVFapp", function() {
+                $Lightning.createComponent(
+                    "c:Lightning_AccountVFCmp",
+                    {recordId:'{!Contact.Id}'},
+                    "renderLightingComponent",
+                    function(cmp) {
+                        console.log("Component is created!");
+                        console.log(cmp);
+                    });
+                });
+  </script>
+</apex:page>

@@ -1,0 +1,56 @@
+<template>
+    <lightning-card title="Dynamic Table">
+        <lightning-layout multiple-rows="true">
+            <lightning-layout-item padding="around-small" size="12">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="FirstName">FirstName</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="LastName">LastName</div>
+                            </th>
+                            <th class="" scope="col">
+                                <div class="slds-truncate" title="Action">Action</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={rowItems} for:item="row" for:index="index">
+                            Index:{index}
+                            <tr class="slds-hint-parent" key={row.RowNumber} data-id={row.RowNumber}>
+                                <th data-label="Opportunity Name" scope="row">
+                                    <div class="slds-truncate" title="Cloudhub">
+                                        <lightning-input type="text" value={row.FirstName} onchange={firstNameHandler}>
+                                        </lightning-input>
+                                    </div>
+                                </th>
+                                <td data-label="Account Name">
+                                    <lightning-input type="text" value={row.LastName} onchange={lastNameHandler}>
+                                    </lightning-input>
+                                </td>
+                                <td>
+                                    <template if:true={row.display}>
+                                        <lightning-icon icon-name="action:new" alternative-text="New" title="New"
+                                            onclick={addRowHandler}></lightning-icon>
+                                    </template>
+                                    <template if:false={row.display}>
+                                        <lightning-icon icon-name="action:delete" data-id={row.RowNumber} alternative-text="Delete"
+                                            title="Delete" onclick={deleteRowHandler}></lightning-icon>
+                                    </template>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </lightning-layout-item>
+            <lightning-layout-item>
+               
+                    <lightning-button variant="brand" label="Save" title="Primary action" onclick={onSaveHandler}
+                        class="slds-m-left_x-small"></lightning-button>
+               
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

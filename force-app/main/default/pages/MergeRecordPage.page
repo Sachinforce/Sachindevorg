@@ -1,0 +1,36 @@
+<apex:page controller="MergeRecordController" id="thePage">
+<style>
+.tableBorder{
+  border: 1px solid #bbb;
+}
+.rowBorder{
+   border-bottom: 2px solid #bbb;
+}
+.firstRowBorder{
+   border-bottom: 2px solid #bbb;
+   border-right: 1px solid #bbb;
+}
+</style>
+  <apex:dataTable value="{!mapLabelAPI}" var="field" id="theTable"
+        rowClasses="rowBorder" styleClass="tableBorder" width="100%" columns="{!columnNumber}">
+       
+        <!--apex:facet name="caption">table caption</apex:facet>
+        <apex:facet name="header">table header</apex:facet>
+        <apex:facet name="footer">table footer</apex:facet-->
+
+        <apex:column width="25%" styleClass="firstRowBorder">
+            <apex:outputText value="{!field}"/>
+        </apex:column>
+
+        <apex:column width="25%" styleClass="rowBorder">
+            <apex:outputText value="{!firstAccount[mapLabelAPI[field]]}"/>
+        </apex:column>
+        <apex:column width="25%" styleClass="rowBorder">
+            <apex:outputText value="{!scoendAccount[mapLabelAPI[field]]}"/>
+        </apex:column>
+        <apex:column width="25%" styleClass="rowBorder">
+            <apex:outputText value="{!scoendAccount[mapLabelAPI[field]]}"/>
+        </apex:column>
+       
+    </apex:dataTable>
+</apex:page>
