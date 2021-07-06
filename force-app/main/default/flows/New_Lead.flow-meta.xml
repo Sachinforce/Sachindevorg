@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>New_Lead</name>
+        <label>New Lead</label>
+        <locationX>34</locationX>
+        <locationY>161</locationY>
+        <actionName>NewLead</actionName>
+        <actionType>quickAction</actionType>
+        <inputParameters>
+            <name>Company</name>
+            <value>
+                <elementReference>Company_Name</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>LastName</name>
+            <value>
+                <elementReference>LastName</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <interviewLabel>New Lead {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>New Lead</label>
+    <processType>Flow</processType>
+    <screens>
+        <name>Lead_Data</name>
+        <label>Lead Data</label>
+        <locationX>32</locationX>
+        <locationY>57</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>New_Lead</targetReference>
+        </connector>
+        <fields>
+            <name>LastName</name>
+            <dataType>String</dataType>
+            <fieldText>Last Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Company_Name</name>
+            <dataType>String</dataType>
+            <fieldText>Company Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Lead_Data</startElementReference>
+    <status>Active</status>
+</Flow>

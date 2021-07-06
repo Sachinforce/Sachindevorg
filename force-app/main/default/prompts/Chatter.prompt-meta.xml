@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Chatter</masterLabel>
+    <promptVersions>
+        <body>App</body>
+        <customApplication>Inventory_Management</customApplication>
+        <delayDays>1</delayDays>
+        <description>Chatter</description>
+        <dismissButtonLabel>OK</dismissButtonLabel>
+        <displayPosition>BottomRight</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <endDate>2019-12-21</endDate>
+        <isPublished>true</isPublished>
+        <masterLabel>Chatter</masterLabel>
+        <publishedDate>2019-12-20</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <startDate>2019-12-20</startDate>
+        <targetPageKey1>chatter</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <timesToDisplay>10</timesToDisplay>
+        <title>App</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

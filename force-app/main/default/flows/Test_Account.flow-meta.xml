@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <interviewLabel>Test Account {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Test Account</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>All_Account_Source</name>
+        <label>All Account Source</label>
+        <locationX>382</locationX>
+        <locationY>99</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <object>Account</object>
+        <outputReference>RecordId</outputReference>
+        <queriedFields>Id</queriedFields>
+        <sortField>AccountSource</sortField>
+        <sortOrder>Asc</sortOrder>
+    </recordLookups>
+    <startElementReference>All_Account_Source</startElementReference>
+    <status>Draft</status>
+    <variables>
+        <name>RecordId</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+</Flow>

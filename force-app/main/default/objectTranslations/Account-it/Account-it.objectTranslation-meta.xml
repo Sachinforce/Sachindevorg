@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Account Test</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Flow_Action</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>PDF_View</name>
+    </quickActions>
+    <workflowTasks>
+        <description></description>
+        <name>Test_Task</name>
+        <subject></subject>
+    </workflowTasks>
+</CustomObjectTranslation>
