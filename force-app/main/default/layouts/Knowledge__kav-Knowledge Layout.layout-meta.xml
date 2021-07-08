@@ -10,21 +10,15 @@
                 <field>Title</field>
             </layoutItems>
             <layoutItems>
-                <field>Text__c</field>
-            </layoutItems>
-            <layoutItems>
                 <field>UrlName</field>
             </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
     <layoutSections>
-        <customLabel>true</customLabel>
-        <detailHeading>true</detailHeading>
+        <customLabel>false</customLabel>
+        <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
-        <label>Custom Links</label>
-        <layoutColumns/>
-        <layoutColumns/>
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>

@@ -4,25 +4,7 @@
         <fullName>Standard</fullName>
         <active>true</active>
         <ruleEntry>
-            <assignedTo>High_Priority_Cases</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Case.Reason</field>
-                <operation>equals</operation>
-                <value>Installation</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>Billing_Support_Agents</assignedTo>
-            <assignedToType>Queue</assignedToType>
-            <criteriaItems>
-                <field>Case.Status</field>
-                <operation>equals</operation>
-                <value>New</value>
-            </criteriaItems>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>sachinverma008@gmail.com</assignedTo>
+            <assignedTo>sachinverma008@brave-raccoon-q42czs.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -41,7 +23,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>sachinverma008@gmail.com</assignedTo>
+            <assignedTo>sachinverma008@brave-raccoon-q42czs.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -60,7 +42,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>sachinverma008@gmail.com</assignedTo>
+            <assignedTo>sachinverma008@brave-raccoon-q42czs.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -79,7 +61,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>sachinverma008@gmail.com</assignedTo>
+            <assignedTo>sachinverma008@brave-raccoon-q42czs.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.BillingCountry</field>
@@ -98,7 +80,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>sachinverma008@gmail.com</assignedTo>
+            <assignedTo>sachinverma008@brave-raccoon-q42czs.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Account.Type</field>

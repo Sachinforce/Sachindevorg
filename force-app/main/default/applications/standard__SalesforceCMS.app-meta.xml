@@ -6,19 +6,11 @@
     <label>Salesforce CMS</label>
     <navType>Console</navType>
     <tabs>standard-CmsAuthorHome</tabs>
-    <tabs>Discovery__c</tabs>
     <tabs>standard-CmsChannel</tabs>
     <tabs>standard-CmsWorkspaces</tabs>
     <tabs>standard-CmsExperiences</tabs>
-    <tabs>Property_Type__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
-        <mappings>
-            <tab>Discovery__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Property_Type__c</tab>
-        </mappings>
         <mappings>
             <tab>standard-CmsAuthorHome</tab>
         </mappings>

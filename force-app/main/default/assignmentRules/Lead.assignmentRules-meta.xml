@@ -4,7 +4,7 @@
         <fullName>Standard</fullName>
         <active>true</active>
         <ruleEntry>
-            <assignedTo>sachinverma008@gmail.com</assignedTo>
+            <assignedTo>sachinverma008@brave-raccoon-q42czs.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.Country</field>
@@ -13,7 +13,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>sachinverma008@gmail.com</assignedTo>
+            <assignedTo>sachinverma008@brave-raccoon-q42czs.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.Country</field>

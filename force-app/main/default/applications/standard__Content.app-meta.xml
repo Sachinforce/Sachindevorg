@@ -8,13 +8,4 @@
     <tabs>standard-Workspace</tabs>
     <tabs>standard-ContentSearch</tabs>
     <tabs>standard-ContentSubscriptions</tabs>
-    <tabs>Waypoint__c</tabs>
-    <tabs>Suggestion__c</tabs>
-    <tabs>Battle_Station__c</tabs>
-    <tabs>Property__c</tabs>
-    <tabs>Customer_Satisfaction_Survey__c</tabs>
-    <tabs>Camping_Item__c</tabs>
-    <tabs>Tower__c</tabs>
-    <tabs>Discovery__c</tabs>
-    <tabs>Property_Type__c</tabs>
 </CustomApplication>

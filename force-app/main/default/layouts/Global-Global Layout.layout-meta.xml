@@ -2,13 +2,10 @@
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
     <quickActionList>
         <quickActionListItems>
-            <quickActionName>New_Battle_Station</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
-            <quickActionName>Waypoint</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
             <quickActionName>FeedItem.TextPost</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>FeedItem.ContentPost</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>NewEvent</quickActionName>
@@ -23,7 +20,16 @@
             <quickActionName>LogACall</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
+            <quickActionName>SendEmail</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
             <quickActionName>NewOpportunity</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>NewCase</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>NewLead</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>FeedItem.LinkPost</quickActionName>
@@ -33,12 +39,6 @@
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>FeedItem.QuestionPost</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
-            <quickActionName>SendEmail</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
-            <quickActionName>New_Suggestion</quickActionName>
         </quickActionListItems>
     </quickActionList>
     <showEmailCheckbox>false</showEmailCheckbox>
